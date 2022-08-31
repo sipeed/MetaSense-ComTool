@@ -1093,6 +1093,7 @@ class Gragh_MetaSenseLite(Gragh_Widget_Base):
             if len(self.frames) != 0 and self.frames[len(self.frames)-1].shape != arr.T.shape:
                 self.frames.clear()
             self.frames.append(arr)
+            self.frames = self.frames[-500:]
             np_arrs = np.array(self.frames)
 
             if self.focus[0].isChecked():
