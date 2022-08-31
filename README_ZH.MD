@@ -3,9 +3,9 @@ COMTool
 
 [English](./README.MD) | 中文
 
- ![GitHub](https://img.shields.io/github/license/neutree/comtool) [![PyPI](https://img.shields.io/pypi/v/comtool.svg)](https://pypi.python.org/pypi/comtool/) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/neutree/comtool/pack) ![GitHub repo size](https://img.shields.io/github/repo-size/neutree/comtool) ![GitHub Repo stars](https://img.shields.io/github/stars/neutree/comtool?style=social)
+ ![GitHub](https://img.shields.io/github/license/sipeed/comtool) [![PyPI](https://img.shields.io/pypi/v/comtool.svg)](https://pypi.python.org/pypi/comtool/) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/sipeed/comtool/pack) ![GitHub repo size](https://img.shields.io/github/repo-size/sipeed/comtool) ![GitHub Repo stars](https://img.shields.io/github/stars/sipeed/comtool?style=social)
 
- [![GitHub all releases](https://img.shields.io/github/downloads/neutree/comtool/total?label=release%20downloads)](https://github.com/Neutree/COMTool/releases) [![PyPI - Downloads](https://img.shields.io/pypi/dm/comtool?label=pypi%20downloads)](https://pypi.org/project/COMTool/) [![SourceForge](https://img.shields.io/sourceforge/dt/comtool?label=sourceforge%20downloads)](https://sourceforge.net/projects/comtool)
+ [![GitHub all releases](https://img.shields.io/github/downloads/sipeed/comtool/total?label=release%20downloads)](https://github.com/sipeed/COMTool/releases) [![PyPI - Downloads](https://img.shields.io/pypi/dm/comtool?label=pypi%20downloads)](https://pypi.org/project/COMTool/) [![SourceForge](https://img.shields.io/sourceforge/dt/comtool?label=sourceforge%20downloads)](https://sourceforge.net/projects/comtool)
 
 
 跨平台开源串口调试助手，使用 python 编写
@@ -76,9 +76,9 @@ COMTool
 
 ### Windows
 
-* 在 [release](https://github.com/Neutree/COMTool/releases) 或 [sourceforge](https://sourceforge.net/projects/comtool/files/) 下载最新的可执行文件
+* 在 [release](https://github.com/sipeed/COMTool/releases) 或 [sourceforge](https://sourceforge.net/projects/comtool/files/) 下载最新的可执行文件
 * 解压`.zip`文件，点击`comtool.exe`运行
-> 另外你也可以使用 scoop 安装, 由 [StudentWeis](https://github.com/Neutree/COMTool/issues/50) 维护
+> 另外你也可以使用 scoop 安装, 由 [StudentWeis](https://github.com/sipeed/COMTool/issues/50) 维护
 > ```
 > scoop bucket add Nightly https://github.com/StudentWeis/Nightly
 > scoop install comtool
@@ -91,7 +91,7 @@ Linux版本太多，我们只为ubuntu编译二进制。
 其他发行版请[从 pypi 或源码安装](#以-python-包形式安装)。
 如果你有什么好的跨平台打包想法，比如 flatpak 或 appimage，你可以贡献一个 PR 或添加一个 issue 来告诉我如何可以做到
 
-> Arch Linux 及其衍生版本可以通过 AUR 仓库在线安装：(目前由 [taotieren](https://github.com/Neutree/COMTool/issues/44) 维护)：
+> Arch Linux 及其衍生版本可以通过 AUR 仓库在线安装：(目前由 [taotieren](https://github.com/sipeed/COMTool/issues/44) 维护)：
 > ```bash
 > # 发行版
 > yay -S python-comtool
@@ -99,7 +99,7 @@ Linux版本太多，我们只为ubuntu编译二进制。
 > yay -S python-comtool-git
 > ```
 
-* 在 [release](https://github.com/Neutree/COMTool/releases) 页面或 [sourceforge](https://sourceforge.net/projects/comtool/files/) 下载最新版本
+* 在 [release](https://github.com/sipeed/COMTool/releases) 页面或 [sourceforge](https://sourceforge.net/projects/comtool/files/) 下载最新版本
 * 如果不想使用`sudo`命令自动软件，则需要将当前用户添加到`dialout`组
 ```shell
 sudo usermod -a -G dialout $USER
@@ -115,7 +115,7 @@ reboot #must reboot to take effect
 只需打开终端，输入以下命令：
 ```
 sudo apt install git
-git clone https://github.com/Neutree/COMTool.git --depth=1
+git clone https://github.com/sipeed/COMTool.git --depth=1
 cd COMTool
 pip3 install .
 # 或者
@@ -137,7 +137,7 @@ comtool
 
 ### macOS
 
-* 在 [release](https://github.com/Neutree/COMTool/releases) 页面或 [sourceforge](https://sourceforge.net/projects/comtool/files/) 下载最新版本
+* 在 [release](https://github.com/sipeed/COMTool/releases) 页面或 [sourceforge](https://sourceforge.net/projects/comtool/files/) 下载最新版本
 * 安装 dmg 包
 
 如果你想同时打开多个`comtool`，只需要右键 dock 栏图标，选择`新建窗口`即可。
@@ -157,7 +157,7 @@ cd /Applicatioin/comtool.app/Contents/MacOS
 
 ## Windows Defender 显示 comtool 可执行程序是恶意软件？
 
-如果你的软件是从[这里](https://github.com/Neutree/COMTool/releases)下载的，没关系，这是[打包产生的问题](https://github.com/pyinstaller/pyinstaller/issues/4852)，所有的源码和打包脚本都在这里，连打包过程都是用`github action`完全自动化，没有人手动打包。
+如果你的软件是从[这里](https://github.com/sipeed/COMTool/releases)下载的，没关系，这是[打包产生的问题](https://github.com/pyinstaller/pyinstaller/issues/4852)，所有的源码和打包脚本都在这里，连打包过程都是用`github action`完全自动化，没有人手动打包。
 
 如果你仍然担心，只需下载源代码，然后使用 `python`运行或自己打包。
 
@@ -197,11 +197,11 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple comtool
 
 * 也可以直接从 `github` 安装
 ```
-pip3 install git+https://github.com/Neutree/COMTool
+pip3 install git+https://github.com/sipeed/COMTool
 ```
 
 * 或者你也可以下载源码，然后从源码安装
-  * 下载源码，[在网页下载](https://github.com/Neutree/COMTool) 或 `git clone https://github.com/Neutree/COMTool.git`
+  * 下载源码，[在网页下载](https://github.com/sipeed/COMTool) 或 `git clone https://github.com/sipeed/COMTool.git`
   * 安装
 ```
 cd COMTool
@@ -265,7 +265,7 @@ sudo apt install python3-pyqt5
 
 3. 克隆项目
 ```
-git clone https://github.com/Neutree/COMTool.git
+git clone https://github.com/sipeed/COMTool.git
 ```
 
 4. 撸码、解决错误或添加新的特性
@@ -329,12 +329,12 @@ python i18n.py finish
 
 * 合并请求
 
-创建 PR 以将你的更改合并到 [comtool 仓库](https://github.com/Neutree/COMTool)
+创建 PR 以将你的更改合并到 [comtool 仓库](https://github.com/sipeed/COMTool)
 
 
 ## 问题和意见
 
-创建 [issue](https://github.com/Neutree/COMTool/issues/new)
+创建 [issue](https://github.com/sipeed/COMTool/issues/new)
 
 
 ## 开源协议

@@ -23,15 +23,15 @@ def HelpInfo():
 {}: {}<br>
 <div>
     <div>{}</div>
-    <a style="vertical-align: middle;" href="https://neucrack.com">
+    <a style="vertical-align: middle;" href="https://sipeed.com">
         <img src="{}" width=109 height=32/></a>
 </div>
-{}: <b><a style="color:#009688;" href="https://github.com/Neutree/COMTool#license">LGPL-3.0</a></b><br>
+{}: <b><a style="color:#009688;" href="https://github.com/sipeed/COMTool#license">LGPL-3.0</a></b><br>
 {}<br>
-{} <b><a style="color:#009688;" href="https://github.com/neutree/COMTool">Github</a></b>, {} <b><a style="color:#009688;" href="https://github.com/Neutree/COMTool/releases"> releases {}</a></b><br>
-{} <b><a style="color:#009688;" href="https://github.com/Neutree/COMTool/issues"> issues</a></b><br>
+{} <b><a style="color:#009688;" href="https://github.com/sipeed/COMTool">Github</a></b>, {} <b><a style="color:#009688;" href="https://github.com/sipeed/COMTool/releases"> releases {}</a></b><br>
+{} <b><a style="color:#009688;" href="https://github.com/sipeed/COMTool/issues"> issues</a></b><br>
 {}: 566531359 <br><br>
-{}: <a style="color:#009688;" href="https://neucrack.com/donate">neucrack.com/donate<br><img src="{}"/> <img src="{}"/></a><br>
+{}: <a style="color:#009688;" href="https://sipeed.com/donate">sipeed.com/donate<br><img src="{}"/> <img src="{}"/></a><br>
 '''.format(
     parameters.appName,
     version.__version__,

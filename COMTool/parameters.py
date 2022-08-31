@@ -24,7 +24,7 @@ defaultBaudrates = [9600, 19200, 38400, 57600, 74880, 115200, 921600, 1000000, 1
 encodings = ["ASCII", "UTF-8", "UTF-16", "GBK", "GB2312", "GB18030"]
 customSendItemHeight = 40
 
-author = "Neucrack"
+author = "sipeed"
 
 def get_config_path(configFileName):
     configFilePath = configFileName
