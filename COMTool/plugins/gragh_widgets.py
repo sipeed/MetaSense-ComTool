@@ -922,7 +922,7 @@ class Gragh_MetaSenseLite(Gragh_Widget_Base):
         unitSlider.setValue(0)
 
         fpsSlider.setMinimum(1)
-        fpsSlider.setMaximum(30)
+        fpsSlider.setMaximum(20)
         fpsSlider.setSingleStep(1)
         fpsSlider.setTickInterval(1)
         fpsSlider.setTickPosition(QSlider.TicksBelow)
