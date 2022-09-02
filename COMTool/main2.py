@@ -707,9 +707,9 @@ def main():
             file = open(mainWindow.DataPath + '/assets/qss/style-dark.qss', "r", encoding="utf-8")
         qss = file.read().replace("$DataPath",mainWindow.DataPath)
         app.setStyleSheet(qss)
-        t = threading.Thread(target=mainWindow.autoUpdateDetect)
-        t.setDaemon(True)
-        t.start()
+        # t = threading.Thread(target=mainWindow.autoUpdateDetect)
+        # t.setDaemon(True)
+        # t.start()
         splash.finish(mainWindow)
         ret = app.exec_()
         if mainWindow.needRestart:
