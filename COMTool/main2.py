@@ -626,7 +626,7 @@ class MainWindow(CustomTitleBarWindowMixin, QMainWindow):
             return
         msgBox = QMessageBox()
         desc = versionInfo.desc if len(versionInfo.desc) < 300 else versionInfo.desc[:300] + " ... "
-        link = '<a href="https://github.com/sipeed/COMTool/releases">github.com/sipeed/COMTool/releases</a>'
+        link = '<a href="https://github.com/Neutree/COMTool/releases">github.com/Neutree/COMTool/releases</a>'
         info = '{}<br>{}<br><br>v{}: {}<br><br>{}'.format(_("New versioin detected, please click learn more to download"), link, '{}.{}.{}'.format(versionInfo.major, versionInfo.minor, versionInfo.dev), versionInfo.name, desc)
         learn = msgBox.addButton(_("Learn More"), QMessageBox.YesRole)
         skip = msgBox.addButton(_("Skip this version"), QMessageBox.YesRole)

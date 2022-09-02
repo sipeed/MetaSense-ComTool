@@ -3,9 +3,9 @@ COMTool
 
 English | [中文](./README_ZH.MD)
 
- ![GitHub](https://img.shields.io/github/license/sipeed/comtool) [![PyPI](https://img.shields.io/pypi/v/comtool.svg)](https://pypi.python.org/pypi/comtool/) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/sipeed/comtool/pack) ![GitHub repo size](https://img.shields.io/github/repo-size/sipeed/comtool) ![GitHub Repo stars](https://img.shields.io/github/stars/sipeed/comtool?style=social)
+ ![GitHub](https://img.shields.io/github/license/neutree/comtool) [![PyPI](https://img.shields.io/pypi/v/comtool.svg)](https://pypi.python.org/pypi/comtool/) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/neutree/comtool/pack) ![GitHub repo size](https://img.shields.io/github/repo-size/neutree/comtool) ![GitHub Repo stars](https://img.shields.io/github/stars/neutree/comtool?style=social)
 
- [![GitHub all releases](https://img.shields.io/github/downloads/sipeed/comtool/total?label=release%20downloads)](https://github.com/sipeed/COMTool/releases) [![PyPI - Downloads](https://img.shields.io/pypi/dm/comtool?label=pypi%20downloads)](https://pypi.org/project/COMTool/) [![SourceForge](https://img.shields.io/sourceforge/dt/comtool?label=sourceforge%20downloads)](https://sourceforge.net/projects/comtool)
+ [![GitHub all releases](https://img.shields.io/github/downloads/neutree/comtool/total?label=release%20downloads)](https://github.com/Neutree/COMTool/releases) [![PyPI - Downloads](https://img.shields.io/pypi/dm/comtool?label=pypi%20downloads)](https://pypi.org/project/COMTool/) [![SourceForge](https://img.shields.io/sourceforge/dt/comtool?label=sourceforge%20downloads)](https://sourceforge.net/projects/comtool)
 
 
 A cross platform serial debug tools written by python
@@ -81,9 +81,9 @@ There are two ways to install COMTool:
 
 ### Windows
 
-* Download the latest bin file at the [release page](https://github.com/sipeed/COMTool/releases) or [sourceforge](https://sourceforge.net/projects/comtool/files/)
+* Download the latest bin file at the [release page](https://github.com/Neutree/COMTool/releases) or [sourceforge](https://sourceforge.net/projects/comtool/files/)
 * Unzip `.zip` file, and click `comtool.exe` to run
-> And you can install by scoop, maintained by [StudentWeis](https://github.com/sipeed/COMTool/issues/50)
+> And you can install by scoop, maintained by [StudentWeis](https://github.com/Neutree/COMTool/issues/50)
 > ```
 > scoop bucket add Nightly https://github.com/StudentWeis/Nightly
 > scoop install comtool
@@ -95,7 +95,7 @@ Linux has too much version, so we only compile binary for ubuntu.
 Other distribution please [install from pypi or source code](#Install-python-package).
 If you have any idea to pack cross platform binary like flatpak or appimage, you can contribute a pull request or add an issue to tell me how to
 
-> Arch Linux and its derivative distributions can install from AUR(maintained by [taotieren](https://github.com/sipeed/COMTool/issues/44))：
+> Arch Linux and its derivative distributions can install from AUR(maintained by [taotieren](https://github.com/Neutree/COMTool/issues/44))：
 > ```bash
 > # Release version
 > yay -S python-comtool
@@ -103,7 +103,7 @@ If you have any idea to pack cross platform binary like flatpak or appimage, you
 > yay -S python-comtool-git
 > ```
 
-* Download release at [release](https://github.com/sipeed/COMTool/releases) page, and extract files from `.zip` file, and click `comtool` to run
+* Download release at [release](https://github.com/Neutree/COMTool/releases) page, and extract files from `.zip` file, and click `comtool` to run
 
 * Add current user to dialout group to avoid `sudo` command
 ```shell
@@ -118,7 +118,7 @@ reboot #must reboot to take effect
 just open terminal, type the command below:
 ```
 sudo apt install git
-git clone https://github.com/sipeed/COMTool.git --depth=1
+git clone https://github.com/Neutree/COMTool.git --depth=1
 cd COMTool
 pip3 install .
 # or
@@ -140,7 +140,7 @@ comtool
 
 ### macOS
 
-* Download release at [release](https://github.com/sipeed/COMTool/releases) page or [sourceforge](https://sourceforge.net/projects/comtool/files/)
+* Download release at [release](https://github.com/Neutree/COMTool/releases) page or [sourceforge](https://sourceforge.net/projects/comtool/files/)
 * Install dmg package
 
 If you want to open multiple comtool, just right click dock icon, then click `New Window`.
@@ -159,7 +159,7 @@ cd /Applicatioin/comtool.app/Contents/MacOS
 
 ## Windows defender shows comtool binary is malware?
 
-If your program is download from [here](https://github.com/sipeed/COMTool/releases), it's ok, the error caused by [pack issue](https://github.com/pyinstaller/pyinstaller/issues/4852), all the source code and pack script is here, even the pack progress is totally automated with github action, no one manually pack.
+If your program is download from [here](https://github.com/Neutree/COMTool/releases), it's ok, the error caused by [pack issue](https://github.com/pyinstaller/pyinstaller/issues/4852), all the source code and pack script is here, even the pack progress is totally automated with github action, no one manually pack.
 
 If you remain have concern, just download source code to run with python or pack yourself.
 
@@ -199,11 +199,11 @@ pip install -i https://pypi.tuna.tsinghua.edu.cn/simple comtool
 
 * Or you can directly install from github
 ```
-pip3 install git+https://github.com/sipeed/COMTool
+pip3 install git+https://github.com/Neutree/COMTool
 ```
 
 * Or you can download source code, then install from source code
-  * download source code, download [in web page](https://github.com/sipeed/COMTool) or `git clone https://github.com/sipeed/COMTool.git`
+  * download source code, download [in web page](https://github.com/Neutree/COMTool) or `git clone https://github.com/Neutree/COMTool.git`
   * install
 ```
 cd COMTool
@@ -268,7 +268,7 @@ sudo apt install python3-pyqt5
 
 3. clone project
 ```
-git clone https://github.com/sipeed/COMTool.git
+git clone https://github.com/Neutree/COMTool.git
 ```
 
 4. code, resolve bugs or add new reatures
@@ -332,14 +332,14 @@ Run application, you will see the new translation
 
 * Pull request
 
-Create a PR to merge your changes to [this repo](https://github.com/sipeed/COMTool)
+Create a PR to merge your changes to [this repo](https://github.com/Neutree/COMTool)
 
 
 
 
 ## Issue and improvement
 
-Create issue [here](https://github.com/sipeed/COMTool/issues/new)
+Create issue [here](https://github.com/Neutree/COMTool/issues/new)
 
 
 ## License

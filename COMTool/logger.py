@@ -1,8 +1,8 @@
 '''
     logger wrapper based oh logging
 
-    @author sipeed
-    @license MIT copyright 2020-2021 sipeed sipeed@gmail.com
+    @author neucrack
+    @license MIT copyright 2020-2021 neucrack CZD666666@gmail.com
 '''
 
 

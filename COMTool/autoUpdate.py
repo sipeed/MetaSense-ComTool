@@ -7,13 +7,13 @@ except ImportError:
 log = parameters.log
 
 class AutoUpdate:
-    updateUrl = "https://github.com/sipeed/COMTool/releases"
-    releaseApiUrl = "https://api.github.com/repos/sipeed/COMTool/releases"
-    releaseApiUrl2 = "https://sipeed.com/comtool_update"
+    updateUrl = "https://github.com/Neutree/COMTool/releases"
+    releaseApiUrl = "https://api.github.com/repos/Neutree/COMTool/releases"
+    releaseApiUrl2 = "https://neucrack.com/comtool_update"
     def detectNewVersion(self):
-        need, v = self.checkUpdate_sipeed() # github api may change, but this will not
+        need, v = self.checkUpdate_neucrack() # github api may change, but this will not
         if not v:
-            log.i("get version info from sipeed fail, now get from github")
+            log.i("get version info from neucrack fail, now get from github")
             need , v = self.checkUpdate_github()
         return need, v
     
@@ -46,7 +46,7 @@ class AutoUpdate:
         log.i("Already latest version!")
         return False, latest
 
-    def checkUpdate_sipeed(self):
+    def checkUpdate_neucrack(self):
         import requests, json
         latest = version.Version()
         try:

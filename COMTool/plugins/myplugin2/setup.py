@@ -27,15 +27,15 @@ setup(
     version="v1.0.0",
 
     # Author details
-    author='sipeed',
-    author_email='sipeed@gmail.com',
+    author='Neucrack',
+    author_email='czd666666@gmail.com',
 
     description='plugin demo for comtool',
     long_description=long_description,
     long_description_content_type="text/markdown",
 
     # The project's main homepage.
-    url='https://github.com/sipeed/COMTool',
+    url='https://github.com/Neutree/COMTool',
 
     # Choose your license
     license='LGPL-3.0',
