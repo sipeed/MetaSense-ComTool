@@ -4,7 +4,7 @@ from .import terminal
 from . import gragh
 # from . import myplugin
 
-pluginClasses = [dbg.Plugin, protocol.Plugin, terminal.Plugin, gragh.Plugin]
+pluginClasses = [gragh.Plugin]
 # pluginClasses.append(myplugin.Plugin)
 
 builtinPlugins = {}
