@@ -1160,8 +1160,8 @@ class Gragh_MetaSenseLite(Gragh_Widget_Base):
 
 
 graghWidgets = {
-    Gragh_Plot.id: Gragh_Plot,
-    Gragh_Button.id: Gragh_Button,
+    # Gragh_Plot.id: Gragh_Plot,
+    # Gragh_Button.id: Gragh_Button,
     # Gragh_DragTof.id: Gragh_DragTof,
     Gragh_MetaSenseLite.id: Gragh_MetaSenseLite,
 }
