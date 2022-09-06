@@ -10,6 +10,8 @@ English | [中文](./README_ZH.MD)
 
 A cross platform serial debug tools written by python
 
+Based on [COMTool] (https://github.com/Neutree/COMTool) 玩we added graphics controls, for MetaSense visualization and interactive operation
+
 --------
 
 | Windows | Linux | Raspberry Pi | macOS |
@@ -157,15 +159,6 @@ cd /Applicatioin/comtool.app/Contents/MacOS
 
 > Because the program is not signed by the developer, it will warn when you open it for the first time. You need to go to `Settings -> Security and Privacy -> General` to see the prompt `comtool` and click `Open anyway`.
 
-## Windows defender shows comtool binary is malware?
-
-If your program is download from [here](https://github.com/Neutree/COMTool/releases), it's ok, the error caused by [pack issue](https://github.com/pyinstaller/pyinstaller/issues/4852), all the source code and pack script is here, even the pack progress is totally automated with github action, no one manually pack.
-
-If you remain have concern, just download source code to run with python or pack yourself.
-
-Of course, if you find a better pack way, please open issue to tell us.
-
-
 ## Install python package
 
 For developers or the binary not support your platform's, use this way to install
@@ -287,59 +280,6 @@ Then execute main program
 ```
 python COMTool/Main.py
 ```
-
-5. pull request
-
-## Add translate
-
-* Install environment first(python pip packages in the requirments.txt)
-```shell
-apt install python3 python3-pip
-pip3 install -r requirements.txt
-```
-
-* If you need to add a new lanuage, or skip
-
-Add locale in [i18n.py](./COMTool/i18n.py)
-```
-locales=["en", "zh_CN", "zh_TW", "ja"]
-```
-append your language to this list, locales can be found [here](https://www.science.co.il/language/Locale-codes.php) or [wikipedia](https://en.wikipedia.org/wiki/Language_localisation), `zh_CN` for example means China Mainland, corresponding language is simplified Chinese characters, `zh_TW` means China Taiwan, and language is traditional Chinese characters, you can also only use `zh` to use simplified Chinese characters.
-
-* Generate translate files
-
-```shell
-python i18n.py prepare
-```
-
-This command will generate `.po` files in locales folder
-
-* Translate mannually
-
-Then translate `.po` files, this is a standard translate file format which named `gettext`
-
-* Generate binary translate files
-
-to make program read faster, the text files `.po` should be convert to binary file `.mo`, just run command:
-```shell
-python i18n.py finish
-```
-and then you can see `locales/<locale>/LC_MESSAGES/messages.mo` file
-
-* Test
-
-Run application, you will see the new translation
-
-* Pull request
-
-Create a PR to merge your changes to [this repo](https://github.com/Neutree/COMTool)
-
-
-
-
-## Issue and improvement
-
-Create issue [here](https://github.com/Neutree/COMTool/issues/new)
 
 
 ## License

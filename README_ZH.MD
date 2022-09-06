@@ -1,4 +1,4 @@
-COMTool
+MetaSense-COMTool
 ========
 
 [English](./README.MD) | 中文
@@ -9,6 +9,8 @@ COMTool
 
 
 跨平台开源串口调试助手，使用 python 编写
+
+基于[COMTool](https://github.com/Neutree/COMTool)添加了图形控件，供MetaSense可视化和互动操作
 
 --------
 
@@ -155,15 +157,6 @@ cd /Applicatioin/comtool.app/Contents/MacOS
 > 因为程序没有开发者签名，所以第一次打开时会警告，需要到`设置 -> 安全和隐私 -> 通用` 看到提示`comtool` 点击 `仍要打开`即可
 
 
-## Windows Defender 显示 comtool 可执行程序是恶意软件？
-
-如果你的软件是从[这里](https://github.com/Neutree/COMTool/releases)下载的，没关系，这是[打包产生的问题](https://github.com/pyinstaller/pyinstaller/issues/4852)，所有的源码和打包脚本都在这里，连打包过程都是用`github action`完全自动化，没有人手动打包。
-
-如果你仍然担心，只需下载源代码，然后使用 `python`运行或自己打包。
-
-当然，如果你找到更好的打包方式，请来 `issue` 告诉我们。
-
-
 ## 以 python 包形式安装
 
 对于开发者，或者没有你的平台的预编译软件， 可以使用这种方式安装
@@ -265,7 +258,7 @@ sudo apt install python3-pyqt5
 
 3. 克隆项目
 ```
-git clone https://github.com/Neutree/COMTool.git
+git clone https://github.com/sipeed/MetaSense-ComTool.git
 ```
 
 4. 撸码、解决错误或添加新的特性
@@ -284,58 +277,6 @@ python COMTool/i18n.py finish
 ```
 python COMTool/Main.py
 ```
-
-5. 创建合并请求
-
-## 添加翻译
-
-* 先安装环境（`requirments.txt`中的`python pip`包）
-```shell
-apt install python3 python3-pip
-pip3 install -r requirements.txt
-```
-
-* 如果你需要添加新语言，否则跳过此步骤
-
-在 [i18n.py](./COMTool/i18n.py) 中添加语言
-```
-locales=["en", "zh_CN", "zh_TW", "ja"]
-```
-将你的语言附加到此列表中，可以在 [此处](https://www.science.co.il/language/Locale-codes.php) 或 [wikipedia](https://en.wikipedia.org/wiki/Language_localisation)，例如`zh_CN`表示中国大陆，对应的语言是简体汉字，`zh_TW`表示中国台湾，语言是繁体字，你也可以只用`zh`来使用中文简体字
-
-* 生成翻译文件
-
-```shell
-python i18n.py prepare
-```
-
-此命令将在 `locales` 文件夹中生成 `.po` 文件
-
-* 手动翻译
-
-然后翻译`.po`文件，这是一个叫`gettext`的标准翻译文件格式，可以直接手动改文件，也可以利用网上的工具
-
-* 生成二进制翻译文件
-
-为了让程序读得更快，文本文件`.po`应该转换成二进制文件`.mo`，运行命令：
-```shell
-python i18n.py finish
-```
-然后你可以看到`locales/<locale>/LC_MESSAGES/messages.mo`文件
-
-* 测试
-
-运行应用程序，你会看到新的翻译
-
-* 合并请求
-
-创建 PR 以将你的更改合并到 [comtool 仓库](https://github.com/Neutree/COMTool)
-
-
-## 问题和意见
-
-创建 [issue](https://github.com/Neutree/COMTool/issues/new)
-
 
 ## 开源协议
 
